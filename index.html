@@ -82,11 +82,11 @@
             color: #666;
         }
 
-        #ribbon{
-            background-image: url("ribbon.png");
-            background-size: 400px 700px;
+        .ribbon::before {
+            content: url("ribbon.png");
             margin: 100px auto 100px auto;
-            background-repeat: no-repeat;
+            width: 400px;
+            height: 700px;
         }
 
         /*post holder*/
@@ -117,7 +117,7 @@
 
 </div>
 
-<div id="ribbon" align="center"></div>
+<div class="ribbon"></div>
 
 <div id="description">
     <center><div class="title">about me</div></center>
