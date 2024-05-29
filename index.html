@@ -14,13 +14,28 @@
             background: #ffffff;
             font-family: Baskerville;
             font-size: 15px;
-            font-color: #ccc;
+            color: #ccc;
             line-height: 20px;
             padding: 0;
             margin: 0 auto;
             width: 100%;
             height: 100%;
         }
+
+        a, a:link{
+            color: #ccc;
+            text-decoration: underline;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+        }
+
+        a:hover{
+            color: pink;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+        }
+
+        /*top header*/
 
         .topbar{
             width: 100%;
@@ -39,7 +54,7 @@
             font-family: Helvetica;
             font-size: 20px;
             font-weight: bold;
-            line-height: 20px;
+            line-height: 30px;
             color: #666;
             float: left;
             margin-left: 10px;
@@ -50,6 +65,7 @@
             float: right;
             margin-right: 30px;
             text-align: right;
+            line-height: 30px;
         }
 
         #everything{
@@ -68,10 +84,11 @@
         .description{
             background: transparent;
             width: 600px;
-            height: 200px;
+            height: 400px;
             margin: auto;
             z-index: 999999;
             text-align: justify;
+            overflow: hidden;
         }
 
         .description .title{
@@ -91,12 +108,20 @@
             background-size: 200px auto;
         }
 
-        /*post holder*/
+        /*posts*/
 
         .postcontain{
             width: 450px;
             margin: 20px auto 20px auto;
             background: transparent;
+        }
+
+        .postcontain .post{
+            width: 430px;
+            border: .8px solid #eee;
+            padding: 10px;
+            margin-bottom: 20px;
+            background: white;
         }
 
     </style>
@@ -145,7 +170,11 @@
 </div>
 
 <div class="postcontain">
-    hi!!!sample post container
+    hi!!!sample post container here. this is where posts will go
+    <div class="post">
+        i'm trying to integrate this so that i can simply upload text files and
+        it'll be posted on the site. kinda like blogspot/tumblr etc
+    </div>
 </div>
 
 </body>
