@@ -52,7 +52,7 @@
             height: 100%;
         }
 
-        a, a:link{
+        a, a:active, a:visited{
             color: #ccc;
             text-decoration: underline;
             transition: all 0.3s ease-in-out;
@@ -91,11 +91,26 @@
             text-align: left;
         }
 
+        .topbar .left a{
+            color: #666;
+            text-decoration: none;
+        }
+
+        .topbar .left a:hover{
+            color: #666;
+            text-decoration: none;
+        }
+
         .topbar .right{ /* links go here*/
             float: right;
             margin-right: 30px;
             text-align: right;
             line-height: 30px;
+        }
+
+        .topbar .right a{
+            display: inline-block;
+            margin-left: 10px;
         }
 
         /* about */
@@ -152,12 +167,14 @@
 <div class="topbar">
 
     <div class="left">
-        janet's site
+        <a href="/">janet's site</a>
     </div>
 
     <div class="right">
         placeholder for links
-        <a href="/"> sample link </a>
+        <a href="/"> resume </a>
+        <a href="/"> linkedin </a>
+        <a href="/"> lorem </a>
     </div>
 
 </div>
